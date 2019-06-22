@@ -23,7 +23,7 @@ If accessing project zip file, extract it to Restaurant folder then on your term
 To deploy the project, go to the projects folder on your terminal do the following:
 
 - `npm install -g angular-cli-ghpages`
-- `ng build --prod --base-href=https://<username>.github.io/<repo>/`
+- `ng build --prod --base-href https://<username>.github.io/<repo>/`
 - `ngh --dir=dist/<project-name>`
 
 ## Development server
