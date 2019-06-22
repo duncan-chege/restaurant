@@ -1,6 +1,6 @@
 <div class="menuitems" *ngFor="let item of menu">
   <p class="levelone">
-    <input (click)="item.clicked = !item.clicked" type="checkbox" name="" id="item.name">
+    <input (click)="item.clicked = !item.clicked; item.expand = true" type="checkbox" name="" id="item.name">
     {{ item.name }}
     <span [ngClass]="{'collapse': item.clicked }" class="levelone" *ngFor="let choice of item.choices">
         <p>

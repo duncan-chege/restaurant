@@ -2,6 +2,20 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.1.
 
+## Setting Up
+
+To run this project, follow these instructions:
+
+By cloning:
+
+- `$ git clone https://github.com/mikechumba/restaurant/`
+
+- `cd restaurant`
+
+- `npm install` - to install the packages in package.json
+
+- `npm serve`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
