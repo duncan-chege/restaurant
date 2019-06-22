@@ -12,9 +12,19 @@ By cloning:
 
 - `cd restaurant`
 
-- `npm install` - to install the packages in package.json
+If accessing project zip file, extract it to Restaurant folder then on your terminal:
 
-- `npm serve`
+- `npm install` - to install the dependencies in package.json.
+
+- `npm serve` - to run the project.
+
+## Deployment 
+
+To deploy the project, go to the projects folder on your terminal do the following:
+
+- `npm install -g angular-cli-ghpages`
+- `ng build --prod --base-href=https://<username>.github.io/<repo>/`
+- `ngh --dir=dist/<project-name>`
 
 ## Development server
 
