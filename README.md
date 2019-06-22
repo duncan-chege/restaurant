@@ -6,15 +6,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 To run this project, follow these instructions:
 
-By cloning:
+First install angular
+
+- `npm install -g @angular/cli`
+
+Then clone the project or extract it from the rar file.
 
 - `$ git clone https://github.com/mikechumba/restaurant/`
 
 - `cd restaurant`
-
-If accessing project zip file, extract it to Restaurant folder then on your terminal:
-
-- `npm install` - to install the dependencies in package.json.
 
 - `npm serve` - to run the project.
 
