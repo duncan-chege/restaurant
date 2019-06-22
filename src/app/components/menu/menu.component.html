@@ -1,4 +1,25 @@
 <div *ngFor="let item of menu">
-  <p>{{ item.na
-
+  <p>
+    <input type="checkbox" name="" id="">
+    {{ item.name }}
+    <span class="levelone" *ngFor="let choice of item.choices">
+        <p>
+          <input type="checkbox" name="" id="">
+          {{ choice.name }}
+        </p>
+    </span>
+    <span class="leveltwo" *ngFor="let related of item.related">
+        <p>
+          <input type="checkbox" name="" id="">
+          {{ related.name }}
+          <span class="levelthree" *ngFor="let relchoice of related.choices">
+              <p>
+                <input type="checkbox" name="" id="">
+                {{ relchoice.name }}
+              </p>
+          </span>
+        </p>
+    </span>
+  </p>
+  
 </div>
