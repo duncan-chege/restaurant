@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Menu } from '../models/Menu';
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +8,7 @@ export class MenuService {
 
   constructor() { }
 
-  getMenu() {
+  getMenu():Menu[] {
     return [
       {
         name: 'Salad',
