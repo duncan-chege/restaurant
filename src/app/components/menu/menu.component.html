@@ -1,25 +1,29 @@
-<div *ngFor="let item of menu">
-  <p>
-    <input type="checkbox" name="" id="">
+<div class="menuitems" *ngFor="let item of menu">
+  <p class="levelone">
+    <input (click)="item.clicked = !item.clicked" type="checkbox" name="" id="item.name">
     {{ item.name }}
-    <span class="levelone" *ngFor="let choice of item.choices">
+    <span [ngClass]="{'collapse': item.clicked }" class="levelone" *ngFor="let choice of item.choices">
         <p>
-          <input type="checkbox" name="" id="">
+          <input (click)="item.expand = !item.expand" type="checkbox" name="" id="item.name">
           {{ choice.name }}
         </p>
     </span>
-    <span class="leveltwo" *ngFor="let related of item.related">
-        <p>
-          <input type="checkbox" name="" id="">
-          {{ related.name }}
-          <span class="levelthree" *ngFor="let relchoice of related.choices">
-              <p>
-                <input type="checkbox" name="" id="">
-                {{ relchoice.name }}
-              </p>
-          </span>
-        </p>
+    <span [ngClass]="{'collapse': item.expand }">
+      <p class="title">You might also like:</p>
+      <span *ngFor="let related of item.related" class="leveltwo">
+          <p>
+            <input (click)="toggleTertiary()" type="checkbox" name="" id="item.name">
+            {{ related.name }}
+            <span [ngClass]="getTertiary()" *ngFor="let relchoice of related.choices">
+                <p>
+                  <input type="checkbox" name="" id="">
+                  {{ relchoice.name }}
+                </p>
+            </span>
+          </p>
+      </span>
     </span>
+    
   </p>
   
 </div>

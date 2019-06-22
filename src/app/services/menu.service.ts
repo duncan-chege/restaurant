@@ -24,7 +24,7 @@ export class MenuService {
               { name: 'Italian' },
               { name: 'Blue Cheese' },
               { name: 'Ranch' },
-            ]
+            ],
           },
           {
             name: 'Bread', choices: [
@@ -33,7 +33,9 @@ export class MenuService {
               { name: 'Sourdough' },
             ]
           }
-        ]
+        ],
+        clicked: true,
+        expand: true
       },
       {
         name: 'Entree',
@@ -43,7 +45,9 @@ export class MenuService {
           { name: 'Rice' },
         ],
         related: [
-        ]
+        ],
+        clicked: true,
+        expand: true
       },
       {
         name: 'Soup',
@@ -59,7 +63,9 @@ export class MenuService {
               { name: 'Breadsticks'}
             ]
           }
-        ]
+        ],
+        clicked: true,
+        expand: true
       }
     ];
   }

@@ -1,0 +1,34 @@
+.menuitems {
+   // width: 50%;
+   margin: 0 3%;
+}
+
+.collapse {
+   display: none;
+}
+
+span {
+   width: 90%;
+   > span {
+      width: 80%;
+      > p {
+         font-size: 12px;
+         > input {
+            margin-left: 40px;
+         }
+      }
+      
+   }
+   > p {
+      font-size: 13px;
+      > input {
+         margin-left: 20px;
+      }
+   }
+
+   > p.title {
+      margin-left: 20px;
+      padding: 6px 0;
+   }
+   
+}
